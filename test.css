@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+  margin: 0;
+  padding: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*Navigation section */
+nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10;
+  padding-top: 10;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 100px;
+  padding-top: 5px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 400ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* header 1 */
+h1
+{
+  text-align: center;
+  color: #55d6aa;
+}
+
+/* paragraph */
+p
+{
+  text-align: center;
+  color: #55d6aa;
+}
+
+/* wrap the buttons together to align them*/
+.wrapper
+{
+  text-align: center;
+}
+
+/* button animations as well as style*/
+.click
+{
+  border: 1px solid #55d6aa;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: fantasy;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button1, .button2
+{
+  color: black;
+}
+
+.button1:hover, .button2:hover
+{
+  color: white;
+}
+
+.click::before
+{
+  content: "";
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #55d6aa;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.button1::before
+{
+  top: 0;
+  border-radius: 0 0 60% 60%;
+}
+
+.button2::before
+{
+  bottom: 0;
+  border-radius: 60% 60% 0 0;
+}
+
+.button1:hover::before, .button2:hover::before
+{
+  height: 180%;
+}
+
+a
+{
+  color: peru;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-style: oblique;
+}
+/*Log in 
+.inputThings
+{
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px #55d6aa;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.inputThings input
+{
+  width: 20%;
+  border: double;
+  outline: #55d6aa;
+  background: transparent;
+  color: #55d6aa;
+}
+
+.button3
+{
+  color: black;
+}
+
+.button3:hover
+{
+  color: white;
+}
+
+.button3::before
+{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.button3:hover::before
+{
+  height: 180%;
+}
+*/
+
+
